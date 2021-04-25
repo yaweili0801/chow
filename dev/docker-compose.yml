@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  chow:
+    image: reactnativecommunity/react-native-android:latest
+    command: /bin/sh -c "cd /opt/chow && npx react-native start"
+    ports:
+      - '8081:8081'
+    volumes:
+      - '../:/opt/chow'
