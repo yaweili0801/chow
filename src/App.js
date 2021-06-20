@@ -18,6 +18,8 @@ import {
   View,
 } from 'react-native';
 
+import {Cat} from './components/Cat';
+
 import {
   Colors,
   DebugInstructions,
@@ -70,9 +72,8 @@ const App: () => Node = () => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.js</Text> to change this
-            screen and then come back to see your edits.
+          <Section title="Test Section">
+            <Cat />
           </Section>
           <Section title="See Your Changes">
             <ReloadInstructions />
