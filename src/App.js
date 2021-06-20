@@ -18,7 +18,7 @@ import {
   View,
 } from 'react-native';
 
-import {Cat} from './components/Cat';
+import Dish from './components/Dish';
 
 import {
   Colors,
@@ -73,7 +73,7 @@ const App: () => Node = () => {
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <Section title="Test Section">
-            <Cat />
+            <Dish />
           </Section>
           <Section title="See Your Changes">
             <ReloadInstructions />
